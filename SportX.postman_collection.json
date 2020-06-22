@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "5a2f6839-6747-426c-9606-53227f05f043",
+		"name": "SportX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPessoaFisica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"Foo\", \"email\":\"bar@mail\", \"classificacao\":\"Ativo\", \"cep\":\"1\", \"cpf\":\"12345678963\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/Pessoa/cadastraPessoaFisica",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Pessoa",
+						"cadastraPessoaFisica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPessoaJuridica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"Foo\", \"email\":\"bar@mail\", \"classificacao\":\"Ativo\", \"cep\":\"1\", \"cnpj\":\"12345678910114\", \"razaoSocial\":\"Teste\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/Pessoa/cadastraPessoaJuridica",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Pessoa",
+						"cadastraPessoaJuridica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectPessoaFisica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/Pessoa/recuperaPessoasFisica",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Pessoa",
+						"recuperaPessoasFisica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectPessoaJuridica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/Pessoa/recuperaPessoasJuridica",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Pessoa",
+						"recuperaPessoasJuridica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTelefoneUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idUsuario\":\"2\",\"telefone\":\"12345678\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/Telefone/cadastraTelefoneUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Telefone",
+						"cadastraTelefoneUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectTelefoneUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idUsuario\":\"2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/Telefone/recuperarTelefonesUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Telefone",
+						"recuperarTelefonesUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectTodosTelefones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idUsuario\":\"2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/Telefone/recuperarTelefonesUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"Telefone",
+						"recuperarTelefonesUsuario"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
